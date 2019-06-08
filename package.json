@@ -1,30 +1,13 @@
 {
-  "name": "airinTechChallenge",
+  "name": "airintechchallenge-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest --verbose",
-    "test:watch": "npm run test -- --watch",
-    "start": "node server.js",
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "seed": "node seed.js",
-    "start:watch": "nodemon server.js",
-    "drop": "mongo notes --eval 'db.dropDatabase()'",
-    "db-load-all": "npm run drop && npm run seed"
+  "description": "Server and API for airin's technical challenge",
+  "main": "jest.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/note-to-self/note-to-self-server.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/note-to-self/note-to-self-server/issues"
-  },
-  "homepage": "https://github.com/note-to-self/note-to-self-server#readme",
+  
   "devDependencies": {
     "eslint": "^5.15.3",
     "jest": "^24.5.0",
@@ -38,5 +21,26 @@
     "express": "^4.16.4",
     "mongoose": "^5.4.19",
     "morgan": "^1.9.1"
-  }
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watch",
+    "start": "node server.js",
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "seed": "node seed.js",
+    "start:watch": "nodemon server.js",
+    "drop": "mongo airin-server --eval 'db.dropDatabase()'",
+    "db-load-all": "npm run drop && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zilula/airinTechChallenge-server.git"
+  },
+  "author": "Lance Merrill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zilula/airinTechChallenge-server/issues"
+  },
+  "homepage": "https://github.com/Zilula/airinTechChallenge-server#readme"
 }

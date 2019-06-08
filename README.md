@@ -39,3 +39,25 @@ View the [deployed endpoint](https://secure-temple-27525.herokuapp.com/questions
 	- Easy to use noSQL DB that worked well for the structure of the data.
 - Mongoose
 	- Used to validate and sanitize incoming data.
+	
+
+## Models
+
+    Answer: {
+	   answer:{
+		   type: String,
+		   required: true
+	   },
+	   questionId: {
+		   ref: 'Question',
+		   type: mongoose.Schema.Types.ObjectId
+	   }
+    } 
+
+    Question: {
+	   question:{
+		   type: String,
+		   required: true
+	   }
+    } 
+

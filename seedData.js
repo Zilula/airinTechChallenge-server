@@ -10,7 +10,6 @@ module.exports = () => {
       });
   }))
     .then(questions => {
-      console.log(questions);
       return Promise.all([...Array(200)].map(() => {
         return Answer
           .create({

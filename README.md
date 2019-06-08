@@ -11,7 +11,8 @@ View the [deployed endpoint](https://secure-temple-27525.herokuapp.com/questions
 	
     `npm i`
     
- - Run scripts 
+ - Run scripts
+ 
  `npm run test` to run the testing suite\
  `npm run test:watch`\
  `npm run start` to launch the server\

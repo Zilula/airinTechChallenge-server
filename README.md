@@ -10,6 +10,7 @@ View the [deployed endpoint](https://secure-temple-27525.herokuapp.com/questions
  - Install dependencies:
 	
     `npm i`\
+    
  - Run scripts 
  `npm run test`\
  `npm run test:watch`\
@@ -20,6 +21,7 @@ View the [deployed endpoint](https://secure-temple-27525.herokuapp.com/questions
  `npm run drop`\
  `npm run db-load-all`\
  `npm run pretest`\
+ 
 ## Technologies
  - Node
 	 - JS runtime environment.

@@ -2,7 +2,7 @@
 
 The backend and API for Airin's web technical challenge. The server contains routes for two models, questions and answers. 
 
-View the[deployed endpoint](https://secure-temple-27525.herokuapp.com/questions)
+View the [deployed endpoint](https://secure-temple-27525.herokuapp.com/questions)
 
 ## Getting Started
 

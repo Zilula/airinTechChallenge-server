@@ -9,7 +9,7 @@ View the [deployed endpoint](https://secure-temple-27525.herokuapp.com/questions
  - Clone and download the [GitHub repo](https://github.com/Zilula/airinTechChallenge-server)
  - Install dependencies:
 	
-    `npm i`\
+    `npm i`
     
  - Run scripts 
  `npm run test`\
@@ -20,7 +20,7 @@ View the [deployed endpoint](https://secure-temple-27525.herokuapp.com/questions
  `npm run start:watch`\
  `npm run drop`\
  `npm run db-load-all`\
- `npm run pretest`\
+ `npm run pretest`
  
 ## Technologies
  - Node

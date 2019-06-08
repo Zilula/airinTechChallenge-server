@@ -32,7 +32,7 @@ View the [deployed endpoint](https://secure-temple-27525.herokuapp.com/questions
 - Jest
 	- Testing library to confirm endpoints behave as expected.
 - Chance
-	- generate seed data.
+	- Generate seed data.
 - MongoDB
 	- Easy to use noSQL DB that worked well for the structure of the data.
 - Mongoose

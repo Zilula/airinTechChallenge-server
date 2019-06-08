@@ -3,6 +3,6 @@ node_js: node
 services:
   - mongodb
 env:
-  - MONGODB_URI=mongodb://localhost:27017/notes
+  - MONGODB_URI=mongodb://heroku_dvp2qxj7:mgm6qaoere014q3m2ua1n0sttf@ds235197.mlab.com:35197/heroku_dvp2qxj7
 
   

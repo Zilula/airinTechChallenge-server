@@ -19,6 +19,14 @@ describe('questions routes', () => {
         expect(questions).toHaveLength(60);
       });
   });
+  it('can get a single question', () => {
+    return request(app)
+      .get('/questions/5cfbfcf1a580e53cc8216b15')
+      .then(res => res.body)
+      .then(question => {
+        expect(question).toHaveLength(1);
+      });
+  });
   it('can get a page of questions', () => {
     return request(app)
       .get('/questions/querying/paging?page=2')

@@ -32,7 +32,7 @@ describe('questions routes', () => {
       .get('/questions/querying/paging?page=1&search=da')
       .then(res => res.body)
       .then(questions => {
-        expect(questions).toHaveLength(18);
+        expect(questions).toHaveLength(14);
       });
   });
 });

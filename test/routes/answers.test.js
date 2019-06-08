@@ -16,8 +16,7 @@ describe('answers routes', () => {
       .get('/answers/5cfbfcf1a580e53cc8216b14')
       .then(res => res.body)
       .then(answers => {
-        console.log(answers);
-        expect(answers).toHaveLength(60);
+        expect(answers).toHaveLength(3);
       });
   });
 });

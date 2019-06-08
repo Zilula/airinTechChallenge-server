@@ -2,24 +2,24 @@
 
 The backend and API for Airin's web technical challenge. The server contains routes for two models, questions and answers. 
 
-View the deployed endpoint
+View the[deployed endpoint](https://secure-temple-27525.herokuapp.com/questions)
 
 ## Getting Started
 
- - Clone and download the GitHub repo
+ - Clone and download the [GitHub repo](https://github.com/Zilula/airinTechChallenge-server)
  - Install dependencies:
 	
-    npm i
+    `npm i`\
  - Run scripts 
- `npm run test`
- `npm run test:watch`
- `npm run start`
- `npm run lint`
- `npm run seed`
- `npm run start:watch`
- `npm run drop`
- `npm run db-load-all`
- `npm run pretest`
+ `npm run test`\
+ `npm run test:watch`\
+ `npm run start`\
+ `npm run lint`\
+ `npm run seed`\
+ `npm run start:watch`\
+ `npm run drop`\
+ `npm run db-load-all`\
+ `npm run pretest`\
 ## Technologies
  - Node
 	 - JS runtime environment.

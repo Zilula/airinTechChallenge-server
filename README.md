@@ -10,6 +10,7 @@ View the [deployed endpoints](https://secure-temple-27525.herokuapp.com/question
  - Install dependencies:
 	
     `npm i`
+- add an `.env` file. Reference the `.env.example` file.
     
  - Run scripts
  

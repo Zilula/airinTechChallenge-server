@@ -1,8 +1,10 @@
 language: node_js
 node_js: node
 services:
-  - mongodb
+- mongodb
 env:
-  - MONGODB_URI=mongodb://heroku_dvp2qxj7:mgm6qaoere014q3m2ua1n0sttf@ds235197.mlab.com:35197/heroku_dvp2qxj7
-
-  
+- MONGODB_URI=mongodb://heroku_dvp2qxj7:mgm6qaoere014q3m2ua1n0sttf@ds235197.mlab.com:35197/heroku_dvp2qxj7
+deploy:
+  provider: heroku
+  api_key:
+    secure: cIHmSGK62YOkEpYPNuznG8gQtqNcICbytm9RkZZ4ktIO+gFmBup5H5G3aAFG7YIWalcQUHLXS3jX3hkZfA3fOo95bNMqPzG8aecOmoWWf2/xF+TVpfLaIWjfC5HtgF8sMiWD3F8/3S4bX/XSxHLcyZ5ZHftAmcRjOO9gRdmtj9WuKVByw/0EBpeEmFP/VufNvtev9doUmy7cYKGFQiaaKaMwuLXbWUYrXe0bGQXVYESTFnBn8dTWztVcLUVWewqcnyQzUANnlpZGbr7lGvZ9hurqu6mfDionoQ8BlvbfDPajtTieseJgjrqV+BE/wesCo+52cK1ADMK291QUyL1YQFztltpwdKdhP0so1/4R0b5vnV/qqdNeiB7o5t72oL/Vkzzw+d0oNpm0b1g1ZXDId380cRALnESC+ezfW+o7I46Z6/s2UUTeFYi/mfv97PWJEnqhDvWnzPpmkQLUpsMzwYpqA50vF9/8kePVCP1BuQ1nj4MuBwSExTWHgJ5ITRY1nUQG1Kq3TxuXPf/9bbidyt5kwvWDo1wVT6PcNnPVfStLtUqNWZ3hPd++wvRmbfZ8Z/2+jixFw1F++JzI29/JJlhNpkH0qA03f1TDvgpWBE+zyqQeAALO9h2TFAi4qyGabKjI8ktMP4zbfHOTkwjnGO5/EYPAMsLHIH/o/iHuDp0=

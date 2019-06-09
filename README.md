@@ -1,6 +1,6 @@
 # Concept:
 
-The backend and API for Airin's web technical challenge. The server contains routes for two schemas/models, questions and answers. The repo is currently connected to the deployed DB so if you want to reseed the DB with more data, change values in seed.js file and run npm run seed.  
+The backend and API for Airin's web technical challenge. The server contains routes for two schemas/models, questions and answers. The repo is currently connected to the deployed DB so if you want to reseed the DB with more data, change values in seed.js file and run `npm run seed`.  
 
 View the [deployed endpoints](https://secure-temple-27525.herokuapp.com/questions)
 

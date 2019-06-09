@@ -1,6 +1,6 @@
 # Concept:
 
-The backend and API for Airin's web technical challenge. The server contains routes for two schemas/models, questions and answers. The repo can be connected to the deployed DB so if you want to reseed the DB with more data, connect to the DB using the URI provided in the email and change the values in the seed.js file and run `npm run seed`.  
+The backend and API for Airin's web technical challenge. The server contains routes for two schemas/models, questions and answers. The repo can be connected to the deployed DB so if you want to reseed the DB with more data, connect to the DB using the URI provided in the `.travis.yml` file  and change the values in the seed.js file and run `npm run seed`.  
 
 View the [deployed endpoints](https://secure-temple-27525.herokuapp.com/questions)
 
@@ -10,7 +10,7 @@ View the [deployed endpoints](https://secure-temple-27525.herokuapp.com/question
  - Install dependencies:
 	
     `npm i`
-- Add a `.env` file. Reference the `.env.example` file
+- Add a `.env` file. Reference the `.env.example` and `.travis.yml` files
     
  - Run scripts
  

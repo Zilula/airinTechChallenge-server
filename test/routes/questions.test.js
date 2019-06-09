@@ -20,9 +20,9 @@ describe('questions routes', () => {
         expect(questions).toHaveLength(125);
       });
   });
+
   it('can get a single question', async() => {
     const { _id } = await getQuestion();
-
 
     return request(app)
       .get(`/questions/${_id}`)
@@ -31,6 +31,7 @@ describe('questions routes', () => {
         expect(question).toHaveLength(1);
       });
   });
+
   it('can get a page of questions', () => {
     return request(app)
       .get('/questions/querying/paging?page=2')
@@ -39,6 +40,7 @@ describe('questions routes', () => {
         expect(questions).toHaveLength(20);
       });
   });
+  
   it('can search by a keyword and return a list of questions', () => {
     return request(app)
       .get('/questions/querying/paging?page=1&search=da')

@@ -4,6 +4,7 @@ require('../../lib/utils/connect')();
 const mongoose = require('mongoose');
 const request = require('supertest');
 const app = require('../../lib/app');
+const getQuestion = require('../dataHelpers');
 
 describe('questions routes', () => {
 
@@ -16,12 +17,15 @@ describe('questions routes', () => {
       .get('/questions')
       .then(res => res.body)
       .then(questions => {
-        expect(questions).toHaveLength(60);
+        expect(questions).toHaveLength(125);
       });
   });
-  it('can get a single question', () => {
+  it('can get a single question', async() => {
+    const { _id } = await getQuestion();
+
+
     return request(app)
-      .get('/questions/5cfbfcf1a580e53cc8216b15')
+      .get(`/questions/${_id}`)
       .then(res => res.body)
       .then(question => {
         expect(question).toHaveLength(1);
@@ -40,7 +44,7 @@ describe('questions routes', () => {
       .get('/questions/querying/paging?page=1&search=da')
       .then(res => res.body)
       .then(questions => {
-        expect(questions).toHaveLength(14);
+        expect(questions).toHaveLength(20);
       });
   });
 });

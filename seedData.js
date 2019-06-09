@@ -2,15 +2,15 @@ const Question = require('./lib/models/questions');
 const Answer = require('./lib/models/answers');
 const chance = require('chance').Chance();
 
-module.exports = () => {
-  return Promise.all([...Array(60)].map(() => {
+module.exports = (questions, answers) => {
+  return Promise.all([...Array(questions)].map(() => {
     return Question
       .create({
         question: chance.sentence()
       });
   }))
     .then(questions => {
-      return Promise.all([...Array(200)].map(() => {
+      return Promise.all([...Array(answers)].map(() => {
         return Answer
           .create({
             answer: chance.sentence(),
